@@ -11,7 +11,7 @@
 
 
 
-Check the logs of the lambda function
+_Check the logs of the lambda function_
  
  ![image](https://github.com/user-attachments/assets/281e2a27-7ca3-4d41-bc4b-3d26fd310d9c)
  ![image](https://github.com/user-attachments/assets/3745b231-f6c2-4887-82f9-3ec6de0ec440)
@@ -22,7 +22,7 @@ Check the logs of the lambda function
 
 **How would you enable a notification to your email when messages are added to the DLQ?**
 
-Response: To enable email notifications when messages are added to a DLQ, you can use Amazon CloudWatch Alarms. Here are the steps:
+**Response:** To enable email notifications when messages are added to a DLQ, you can use Amazon CloudWatch Alarms. Here are the steps:
 
 Creating a CloudWatch Alarm for a Dead-letter Queue (DLQ) to monitor the "ApproximateNumberOfMessagesVisible" metric is a great way to stay on top of unprocessed messages. Here are the steps to set it up:
 
