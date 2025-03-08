@@ -32,7 +32,7 @@ Creating a CloudWatch Alarm for a Dead-letter Queue (DLQ) to monitor the "Approx
 
 **2.**	Create a New Alarm:
 
-In the navigation pane, click on "Alarms" and then "Create Alarm".
+- In the navigation pane, click on "Alarms" and then "Create Alarm".
 
 **3.**	Select Metric:
 
@@ -52,6 +52,7 @@ In the navigation pane, click on "Alarms" and then "Create Alarm".
 
 **6.**	Review and Create:
 - Review the alarm settings and click "Create alarm".
+
 ![image](https://github.com/user-attachments/assets/db8936d9-b9b9-4175-aa49-6cf1fd8e8ea0)
 
 
