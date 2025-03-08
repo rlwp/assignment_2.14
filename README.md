@@ -24,23 +24,27 @@ Check the logs of the lambda function
 
 Response: To enable email notifications when messages are added to a DLQ, you can use Amazon CloudWatch Alarms. Here are the steps:
 
-
-This is to create the alarm state for the DLQ
 Creating a CloudWatch Alarm for a Dead-letter Queue (DLQ) to monitor the "ApproximateNumberOfMessagesVisible" metric is a great way to stay on top of unprocessed messages. Here are the steps to set it up:
-**1.	**Open the CloudWatch Console:
+
+****1.**	**Open the CloudWatch Console:
 Go to the CloudWatch Console.
+
 **2.**	Create a New Alarm:
 In the navigation pane, click on "Alarms" and then "Create Alarm".
+
 **3.**	Select Metric:
-Click on "Select metric" and choose "SQS Metrics".
-Find and select the DLQ you want to monitor.
-Choose the "ApproximateNumberOfMessagesVisible" metric.
+- Click on "Select metric" and choose "SQS Metrics".
+- Find and select the DLQ you want to monitor.
+- Choose the "ApproximateNumberOfMessagesVisible" metric.
+
 **4.**	Configure the Alarm:
-Set the threshold for the alarm. For example, you might want the alarm to trigger when the number of visible messages is greater than 0.
-Configure the period and evaluation criteria according to your needs.
+- Set the threshold for the alarm. For example, you might want the alarm to trigger when the number of visible messages is greater than 0.
+- Configure the period and evaluation criteria according to your needs.
+- 
 **5.**	Set Actions:
-Choose the actions to take when the alarm state is triggered. You can send a notification to an SNS topic.
+- Choose the actions to take when the alarm state is triggered. You can send a notification to an SNS topic.
 If you haven't already, create an SNS topic and subscribe your email address to it.
+
 **6.**	Review and Create:
 Review the alarm settings and click "Create alarm".
 ![image](https://github.com/user-attachments/assets/db8936d9-b9b9-4175-aa49-6cf1fd8e8ea0)
